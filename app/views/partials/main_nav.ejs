@@ -1,0 +1,82 @@
+
+
+<!-- Author: Jayesh Pise (#301337727)
+Date:   Oct 02, 2023
+Filename: Assignment 01 - Personal Portfolio Website (Uisng ExpressJs - Ejs Template Engine) -->
+
+
+<header class="head-wrapper">
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand" href="/"><img src="/img/logo.png" width="120" alt="logo"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="fas-fa-stream navbar-toggler-icon"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <% if (title === "Home") { %>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        <% } %>
+
+        <% if (title === "About") { %>
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        <% } %>
+
+        <% if (title === "Services") { %>
+          <li class="nav-item active">
+            <a class="nav-link" href="/services">Services</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">Services</a>
+          </li>
+        <% } %>
+
+        <% if (title === "Projects") { %>
+          <li class="nav-item active">
+            <a class="nav-link" href="/products">Projects</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/products">Projects</a>
+          </li>
+        <% } %>
+
+        <% if (title === "Contact") { %>
+          <li class="nav-item active">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+
+
+
+
+
+
+
